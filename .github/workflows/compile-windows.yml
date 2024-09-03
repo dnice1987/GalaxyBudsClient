@@ -87,7 +87,7 @@ jobs:
       
     # Make x64 installer
     - name: Download artifact (x64)
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v4.1.7
       with:
         name: GalaxyBudsClient_win64_portable
         
@@ -120,7 +120,7 @@ jobs:
 
     # Make x86 installer
     - name: Download artifact (x86)
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v4.1.7
       with:
         name: GalaxyBudsClient_win32_portable
         
@@ -171,7 +171,7 @@ jobs:
       id: version
       
     - name: Download setup artifact (x64)
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v4.1.7
       with:
         name: GalaxyBudsClient_Setup_64bit_${{steps.version.outputs.version}}.exe
 
